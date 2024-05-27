@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Importing icons
 import Logo from "../../assets/images/logo.svg";
 
@@ -9,6 +9,17 @@ const Navbar = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isDrawerOpen]);
+
   return (
     <div className="w-[90%] bg-transparent lg:w-[80%] mx-auto mt-6 text-white text-base font-normal inter">
       <div className="flex justify-between items-center">
@@ -18,7 +29,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-7">
           <ul className="flex gap-7">
-            <li className=" text-[#B4B4B4]">
+            <li className="text-[#B4B4B4]">
               <a href="">How it Works</a>
             </li>
             <li>
@@ -55,7 +66,7 @@ const Navbar = () => {
       </div>
 
       {isDrawerOpen && (
-        <div className="fixed h-[100vh]  bg-[#087eda] z-50 flex flex-col p-6 overflow-hidden lg:hidden bottom-0">
+        <div className="fixed h-[100vh] inset-0 bg-[#087eda] z-50 flex flex-col p-6 overflow-y-hidden lg:hidden bottom-0">
           <div className="flex justify-between items-center w-full mb-6">
             <a href="">
               <img className="img-fluid" src={Logo} alt="Logo" />
