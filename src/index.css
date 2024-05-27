@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.hero-bg {
+  background-image: url(./assets/images/hero-bg.png);
+}
+
+.buttons-gradiant {
+  background: linear-gradient(89.07deg, #087eda -2.99%, #519bdb 87.79%);
+}
+.buttons-gradiant:hover {
+  background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
+}
+.buttons-gradiant1 {
+  background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
+}
+.buttons-gradiant1:hover {
+  background: linear-gradient(89.07deg, #087eda -2.99%, #519bdb 87.79%);
+}
+
+.number-bg {
+  background: linear-gradient(89.07deg, #087eda -2.99%, #519bdb 87.79%);
+}
+
+.features-card-bg {
+  background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
+}
