@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 const HeroSection = () => {
   return (
-    <div className="  flex flex-col  justify-center hero-bg fixed">
+    <div className="  flex flex-col  justify-center hero-bg">
       <Navbar />
       <div className="w-[90%] mr-auto lg:mr-0 ms-auto lg:ms-auto py-[77px]">
         <div className="flex flex-col lg:flex-row items-center justify-between">
