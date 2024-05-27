@@ -18,7 +18,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-7">
           <ul className="flex gap-7">
-            <li>
+            <li className=" text-[#6F7071]">
               <a href="">How it Works</a>
             </li>
             <li>
