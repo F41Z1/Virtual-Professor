@@ -34,7 +34,7 @@ export class HowWorks extends Component {
                 dive into our platform without <br /> any delays.
               </p>
 
-              <button className="buttons-gradiant1 flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
+              <button className="buttons-gradiant1 text-white flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
                 Get Started
                 <FaArrowRight style={{ color: "white" }} />
               </button>
@@ -62,7 +62,7 @@ export class HowWorks extends Component {
                 Get started in seconds.
               </p>
 
-              <button className="buttons-gradiant1 flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
+              <button className="buttons-gradiant1 text-white flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
                 Get Started
                 <FaArrowRight style={{ color: "white" }} />
               </button>
@@ -95,7 +95,7 @@ export class HowWorks extends Component {
                 dive into our platform without <br /> any delays.
               </p>
 
-              <button className="buttons-gradiant1 flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
+              <button className="buttons-gradiant1 text-white flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
                 Get Started
                 <FaArrowRight style={{ color: "white" }} />
               </button>
