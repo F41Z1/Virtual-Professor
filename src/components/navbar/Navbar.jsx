@@ -54,7 +54,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {isDrawerOpen && (
+      {/* {isDrawerOpen && (
         <div className="fixed h-[100%] inset-0 bg-[#087eda] z-50 flex flex-col p-6 lg:hidden">
           <div className="flex justify-between items-center w-full mb-6">
             <a href="">
@@ -111,7 +111,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
