@@ -55,7 +55,7 @@ const Navbar = () => {
       </div>
 
       {isDrawerOpen && (
-        <div className="fixed h-[100vh] inset-0 bg-[#087eda] z-50 flex flex-col p-6 overflow-hidden lg:hidden bottom-0">
+        <div className="fixed h-[100vh]  bg-[#087eda] z-50 flex flex-col p-6 overflow-hidden lg:hidden bottom-0">
           <div className="flex justify-between items-center w-full mb-6">
             <a href="">
               <img className="img-fluid" src={Logo} alt="Logo" />
