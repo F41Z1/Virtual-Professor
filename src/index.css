@@ -32,3 +32,10 @@ body {
 .features-card-bg {
   background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
 }
+
+.plan-card-bg {
+  background: linear-gradient(180deg, #076dbc 0%, #1b4464 100%);
+}
+.plan-btn-bg {
+  background: linear-gradient(89.07deg, #c54c19 -2.99%, #d97f1b 87.79%);
+}

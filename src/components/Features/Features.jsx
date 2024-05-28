@@ -47,37 +47,41 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="features-card-bg text-white pt-12 ">
+    <div className="features-card-bg text-white lg:pt-12 pt-5  ">
       <div className=" w-[90%] lg:w-[80%] mx-auto">
-        <h2 className="font-bold text-center text-white text-[40px]">
+        <h2 className="font-bold text-center text-white lg:text-[40px] text-[32px] ">
           All The Features You've Been Looking For
         </h2>
-        <p className="text-base text-[#D4D4D4] font-normal text-center py-6 mb-10 ">
+        <p className="text-base text-[#D4D4D4] font-normal text-center lg:py-6 py-3 lg:mb-10 mb-4 ">
           Access all the features you've wanted with our easy-to-use, invisible
           technology, powered by the <br /> latest AI advancements. Virtual
           Professor offers you peace of mind, ensuring you're never alone on{" "}
           <br /> your educational journey.
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-14  rounded-t-lg bg-white p-10 lg:p-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:gap-x-14 lg:gap-x-8    rounded-t-lg bg-white lg:p-8   xl:p-14">
           {features.map((feature, index) => (
             <div
               key={index}
               //   className="p-6 lg:m-2 m-0 mt-[1px]  features-card-bg lg:rounded-lg rounded-0  shadow-lg flex gap-0 lg:gap-3"
 
-              className={`p-2 lg:p-6 lg:m-2 m-0 mt-[1px] features-card-bg lg:rounded-lg rounded-0  shadow-lg flex gap-0 lg:gap-3 ${
+              className={`p-2 lg:p-6  lg:m-2 m-0 mt-[1px] features-card-bg lg:rounded-lg rounded-0  shadow-lg flex gap-0 lg:gap-3 ${
                 index === 0 ? "rounded-t-lg" : ""
               } ${index === features.length - 1 ? "rounded-b-lg" : ""}`}
             >
-              <div className="flex items-start justify-center   ">
-                <img className="h-8 w-16  " src={feature.img} alt="" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-semibold text-white">
-                  {feature.title}
-                </h3>
-                <p className="text-sm font-normal text-white">
-                  {feature.description}
-                </p>
+              <div className="flex items-start justify-center gap-4   ">
+                <img
+                  className="lg:h-8 lg:w-16 h-[25px] w-[50px] mt-1 lg:mt-0  "
+                  src={feature.img}
+                  alt=""
+                />
+                <div>
+                  <h3 className="xl:text-2xl text-[22px] lg:text-[21px]  font-semibold text-white">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm font-normal text-white">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
