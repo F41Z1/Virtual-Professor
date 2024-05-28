@@ -39,6 +39,9 @@ body {
 .features-card-bg {
   background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
 }
+.footer-bg {
+  background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
+}
 
 .plan-card-bg {
   background: linear-gradient(180deg, #076dbc 0%, #1b4464 100%);

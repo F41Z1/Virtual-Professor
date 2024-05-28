@@ -1,4 +1,3 @@
-// src/components/SliderComponent.js
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,7 +7,7 @@ import userimg1 from "../../assets/images/rev1.png";
 import userimg2 from "../../assets/images/rev2.png";
 import userimg3 from "../../assets/images/rev3.png";
 
-const SliderComponent = () => {
+const Reviews = () => {
   const sliderRef = useRef(null);
 
   const settings = {
@@ -143,7 +142,7 @@ const SliderComponent = () => {
             <p className="mb-4 font-medium text-base text-[#041B29]">
               "Ive been using it for about two weeks now and they’ve updated it
               almost weekly with new features. Its cool that they’re continually
-              improving it.” <br /> <br />
+              improving it.” <br className="xl:hidden block" /> <br />
             </p>
             <div className="flex items-center">
               <img
@@ -187,4 +186,4 @@ const SliderComponent = () => {
   );
 };
 
-export default SliderComponent;
+export default Reviews;
