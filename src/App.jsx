@@ -5,12 +5,11 @@ import Rating from "../src/components/rating/Rating.jsx";
 import HowWorks from "../src/components/how-works/HowWorks.jsx";
 import Features from "../src/components/Features/Features.jsx";
 import Plan from "../src/components/Plan/Plan.jsx";
+import FAQs from "../src/components/FAQs/FAQs.jsx";
 
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Hero />
@@ -18,6 +17,7 @@ function App() {
       <HowWorks />
       <Features />
       <Plan />
+      <FAQs />
     </>
   );
 }

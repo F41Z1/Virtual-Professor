@@ -12,6 +12,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.faqs-bg {
+  background-image: url(./assets/images/bg.png);
+  background-size: 507px;
+  background-repeat: no-repeat;
+}
+
 .buttons-gradiant {
   background: linear-gradient(89.07deg, #087eda -2.99%, #519bdb 87.79%);
 }

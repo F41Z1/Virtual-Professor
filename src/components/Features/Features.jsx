@@ -47,18 +47,21 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="features-card-bg text-white lg:pt-12 pt-5  ">
-      <div className=" w-[90%] lg:w-[80%] mx-auto">
-        <h2 className="font-bold text-center text-white lg:text-[40px] text-[32px] ">
-          All The Features You've Been Looking For
-        </h2>
-        <p className="text-base text-[#D4D4D4] font-normal text-center lg:py-6 py-3 lg:mb-10 mb-4 ">
-          Access all the features you've wanted with our easy-to-use, invisible
-          technology, powered by the <br /> latest AI advancements. Virtual
-          Professor offers you peace of mind, ensuring you're never alone on{" "}
-          <br /> your educational journey.
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:gap-x-14 lg:gap-x-8    rounded-t-lg bg-white lg:p-8   xl:p-14">
+    <div className="features-card-bg text-white lg:pt-12 pt-5 rounded-lg lg:rounded-none  ">
+      <div className=" lg:w-[80%] mx-auto">
+        <div className="w-[90%] lg:w-[100%] mx-auto">
+          <h2 className="font-bold text-center text-white lg:text-[40px]  text-[32px] ">
+            All The Features You've Been Looking For
+          </h2>
+          <p className="text-base text-[#D4D4D4] font-normal text-center lg:py-6 py-3 lg:mb-10 mb-4 ">
+            Access all the features you've wanted with our easy-to-use,
+            invisible technology, powered by the{" "}
+            <br className="hidden lg:block" /> latest AI advancements. Virtual
+            Professor offers you peace of mind, ensuring you're never alone on{" "}
+            <br className="hidden lg:block" /> your educational journey.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:gap-x-14 lg:gap-x-8    rounded-t-lg bg-white p-8 lg:p-8   xl:p-14">
           {features.map((feature, index) => (
             <div
               key={index}
