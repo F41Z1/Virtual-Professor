@@ -21,7 +21,7 @@ const Navbar = () => {
   }, [isDrawerOpen]);
 
   return (
-    <div className="w-[90%] bg-transparent lg:w-[80%] mx-auto mt-6 text-white text-base font-normal inter">
+    <div className="w-[95%] xl:w-[80%] bg-transparent  mx-auto mt-6 text-white text-base font-normal inter">
       <div className="flex justify-between items-center">
         <a href="">
           <img className="img-fluid" src={Logo} alt="Logo" />
