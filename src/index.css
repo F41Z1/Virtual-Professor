@@ -24,6 +24,7 @@ body {
 .buttons-gradiant:hover {
   background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
 }
+
 .buttons-gradiant1 {
   background: linear-gradient(90deg, #1b4464 0%, #076dbc 100%);
 }
@@ -44,4 +45,18 @@ body {
 }
 .plan-btn-bg {
   background: linear-gradient(89.07deg, #c54c19 -2.99%, #d97f1b 87.79%);
+}
+
+.review-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(27, 68, 100, 0.04) 0%,
+    rgba(7, 109, 188, 0.04) 100%
+  );
+  opacity: 0, 04%;
+}
+
+.golden-star {
+  color: #faae24;
+  font-size: 22px;
 }

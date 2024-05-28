@@ -45,29 +45,31 @@ const Faq = () => {
   };
 
   return (
-    <div className="w-[90%] lg:w-[80%] mx-auto p-8">
-      <h2 className="text-[40px] font-bold text-center mb-1">
+    <div className="w-[90%] lg:w-[80%] mx-auto lg:p-8 px-0">
+      <h2 className="lg:text-[40px] text-[32px] font-bold text-center mb-1">
         Frequently Asked Questions
       </h2>
       <p className="text-[#646464] font-normal text-base text-center mb-6">
         Have questions? We've got answers. Explore our FAQ section to find
-        solutions to <br /> commonly asked questions and get the information you
-        need.
+        solutions to <br className="hidden lg:block" /> commonly asked questions
+        and get the information you need.
       </p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 faqs-bg">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-4 gap-x-0 faqs-bg">
         {faqs.map((faq, index) => (
           <div key={index} className="mb-3 border rounded-lg bg-white">
             <button
               onClick={() => toggleFaq(index)}
-              className="w-full text-left p-4 rounded-lg focus:outline-none"
+              className="w-full text-left p-3 lg:p-4 rounded-lg focus:outline-none"
             >
               <div className="flex justify-between">
-                <span className="font-medium">{faq.question}</span>
+                <span className="font-medium text-xl">{faq.question}</span>
                 <span>{activeIndex === index ? "-" : "+"}</span>
               </div>
             </button>
             {activeIndex === index && (
-              <div className="p-4 rounded-lg">{faq.answer}</div>
+              <div className="px-3 lg:px-4  pb-1 lg:pb-3 text-[#6E7072]">
+                {faq.answer}
+              </div>
             )}
           </div>
         ))}
