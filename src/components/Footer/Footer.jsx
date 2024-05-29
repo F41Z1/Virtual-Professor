@@ -25,16 +25,16 @@ const Footer = () => {
           <div>
             <ul>
               <li>
-                <a href="">How It Works</a>
+                <a href="#howitworks">How It Works</a>
               </li>
               <li>
-                <a href="">Features</a>
+                <a href="#Features">Features</a>
               </li>
               <li>
-                <a href="">FAQs</a>
+                <a href="#FAQs">FAQs</a>
               </li>
               <li>
-                <a href="">Reviews</a>
+                <a href="#reviews">Reviews</a>
               </li>
               <li>
                 <a href="">Contact Us</a>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <a href="">Account</a>
               </li>
               <li>
-                <a href="">Pricing</a>
+                <a href="#plancard">Pricing</a>
               </li>
               <li>
                 <a href="">Terms of Service</a>

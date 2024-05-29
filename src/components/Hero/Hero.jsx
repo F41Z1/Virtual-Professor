@@ -24,15 +24,21 @@ const HeroSection = () => {
               learning
             </p>
 
-            <div className="lg:mt-10 mt-5 flex gap-8 items-center text-[15px] lg:text-base ">
+            <div className="lg:mt-10 mt-5 flex gap-3 sm:gap-8 items-center text-[15px] lg:text-base ">
               <button className="buttons-gradiant py-3  px-2 xl:py-4 xl:px-6 rounded-lg">
                 Download Now
               </button>
-              <button className=" lg:flex gap-2 items-center hidden ">
-                <div className="buttons-gradiant w-10 h-10 rounded-full flex justify-center items-center">
-                  <FontAwesomeIcon className="ms-1" icon={faPlay} size="lg" />
-                </div>
-                See How It Works
+              <button>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  className="lg:flex gap-2 items-center hidden"
+                >
+                  <div className="buttons-gradiant w-10 h-10 rounded-full flex justify-center items-center">
+                    <FontAwesomeIcon className="ms-1" icon={faPlay} size="lg" />
+                  </div>
+                  See How It Works
+                </a>
               </button>
               <button className=" lg:hidden gap-2 items-center flex ">
                 <div className="buttons-gradiant w-10 h-10 rounded-full flex justify-center items-center">

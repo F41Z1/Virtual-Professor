@@ -28,24 +28,24 @@ const Navbar = () => {
         </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-7">
-          <ul className="flex gap-7">
-            <li className="text-[#B4B4B4]">
-              <a href="">How it Works</a>
+          <ul className="flex gap-7 ">
+            <li className="hover:text-[#B4B4B4]">
+              <a href="#howitworks">How it Works</a>
             </li>
-            <li>
-              <a href="">Features</a>
+            <li className="hover:text-[#B4B4B4]">
+              <a href="#Features">Features</a>
             </li>
-            <li>
-              <a href="">FAQs</a>
+            <li className="hover:text-[#B4B4B4]">
+              <a href="#FAQs">FAQs</a>
             </li>
-            <li>
-              <a href="">Reviews</a>
+            <li className="hover:text-[#B4B4B4]">
+              <a href="#reviews">Reviews</a>
             </li>
-            <li>
-              <a href="">Pricing</a>
+            <li className="hover:text-[#B4B4B4]">
+              <a href="#plancard">Pricing</a>
             </li>
-            <li>
-              <a href="">Contact Us</a>
+            <li className="hover:text-[#B4B4B4]">
+              <a href="#contectus">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -58,7 +58,9 @@ const Navbar = () => {
         </button>
 
         <div className="hidden lg:flex gap-7">
-          <button className="underline underline-offset-4">Login</button>
+          <button className="hover:underline hover:underline-offset-8">
+            Login
+          </button>
           <button className="buttons-gradiant px-6 py-4 rounded-lg">
             Sign Up
           </button>
@@ -108,12 +110,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex flex-col gap-6 mt-6 w-full">
-            <button
-              className="underline underline-offset-4"
-              onClick={toggleDrawer}
-            >
-              Login
-            </button>
+            <button onClick={toggleDrawer}>Login</button>
             <button
               className="buttons-gradiant px-6 py-4 rounded-lg"
               onClick={toggleDrawer}

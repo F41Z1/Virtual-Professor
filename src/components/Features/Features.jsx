@@ -47,7 +47,10 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="features-card-bg text-white lg:pt-12 pt-5 rounded-lg lg:rounded-none  ">
+    <div
+      id="Features"
+      className="features-card-bg text-white lg:pt-12 pt-5 rounded-lg lg:rounded-none  "
+    >
       <div className=" lg:w-[80%] mx-auto">
         <div className="w-[90%] lg:w-[100%] mx-auto">
           <h2 className="font-bold text-center text-white lg:text-[40px]  text-[32px] ">

@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import img1 from "../../assets/images/hw-1.png";
 import img2 from "../../assets/images/hw-2.png";
+import Startedbutton from "./button.jsx";
 
 export class HowWorks extends Component {
   render() {
     return (
-      <div className="bg-white lg:py-12 py-6 w-[90%] lg:w-[80%] mx-auto">
+      <div
+        id="howitworks"
+        className="bg-white lg:py-12 py-6 w-[90%] lg:w-[80%] mx-auto"
+      >
         <h1 className="text-black font-bold lg:text-[50px] text-[32px] text-center">
           How It Works
         </h1>
@@ -35,10 +39,7 @@ export class HowWorks extends Component {
                 platform without <br className="block sm:hidden" /> any delays.
               </p>
 
-              <button className="buttons-gradiant1 text-white flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
-                Get Started
-                <FaArrowRight style={{ color: "white" }} />
-              </button>
+              <Startedbutton />
             </div>
           </div>
           <div className=" grid  lg:grid-cols-2 lg:gap-20 gap-0 mt-4 lg:mt-10">
@@ -63,10 +64,7 @@ export class HowWorks extends Component {
                 Get started in seconds.
               </p>
 
-              <button className="buttons-gradiant1 text-white flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
-                Get Started
-                <FaArrowRight style={{ color: "white" }} />
-              </button>
+              <Startedbutton />
             </div>
             <div className=" lg:block hidden ">
               <img src={img2} alt="" className=" " />
@@ -92,10 +90,7 @@ export class HowWorks extends Component {
                 <br className="hidden xl:block" /> away.
               </p>
 
-              <button className="buttons-gradiant1 text-white flex gap-2 py-3 px-6 mt-5 rounded-lg items-center">
-                Get Started
-                <FaArrowRight style={{ color: "white" }} />
-              </button>
+              <Startedbutton />
             </div>
           </div>
         </div>

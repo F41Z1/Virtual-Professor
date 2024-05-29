@@ -7,7 +7,7 @@ import visa5 from "../../assets/images/visa5.png";
 import Aplus from "../../assets/images/a+.png";
 const PlanCard = () => {
   return (
-    <div className="w-[90%] lg:w-[80%] mx-auto bg-white">
+    <div id="plancard" className="w-[90%] lg:w-[80%] mx-auto bg-white pt-5">
       <div className="  text-center my-5">
         <h2 className="lg:text-[40px]  text-4xl font-bold ">
           Choose Your Plan

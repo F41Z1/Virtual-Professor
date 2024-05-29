@@ -35,6 +35,30 @@ const Reviews = () => {
     ],
   };
 
+  const reviews = [
+    {
+      text: `"Having an assistant on your browser is something everyone should do. Don't use it to just get answers, obviously utilize the explanation feature so you can understand what you're learning."`,
+      imgSrc: userimg1,
+      name: "Michael H.",
+      field: "Electrical Engineering",
+      rating: 4.9,
+    },
+    {
+      text: `"Having this on my computer has made me less anxious in class, even if I missed something I know I can always access the extension later to get explanations on things I missed"`,
+      imgSrc: userimg2,
+      name: "Jessica R.",
+      field: "Business Administration",
+      rating: 4.9,
+    },
+    {
+      text: `"Ive been using it for about two weeks now and they’ve updated it almost weekly with new features. Its cool that they’re continually improving it.”`,
+      imgSrc: userimg3,
+      name: "Benjamin K.",
+      field: "Business Administration",
+      rating: 4.9,
+    },
+  ];
+
   const nextSlide = () => {
     sliderRef.current.slickNext();
   };
@@ -44,7 +68,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="p-4">
+    <div id="reviews" className="p-4">
       <div className="w-[80%] mx-auto">
         <h2 className="text-[36px] lg:text-[46px] text-black font-bold text-start mb-4">
           Our Reviews
@@ -57,13 +81,13 @@ const Reviews = () => {
           </p>
           <div className="lg:flex hidden justify-end items-center gap-1 mb-4">
             <button
-              className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-0 border-black mr-5"
+              className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
               onClick={prevSlide}
             >
               &lt;
             </button>
             <button
-              className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-0 border-black mr-5"
+              className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
               onClick={nextSlide}
             >
               &gt;
@@ -76,107 +100,48 @@ const Reviews = () => {
         ref={sliderRef}
         {...settings}
       >
-        <div className="p-4 ">
-          <div className="review-bg rounded-lg p-6 h-full">
-            <p className="mb-4 font-medium text-base text-[#041B29]">
-              "Having an assistant on your browser is something everyone should
-              do. Don't use it to just get answers, obviously utilize the
-              explanation feature so you can understand what you're learning."
-            </p>
-            <div className="flex items-center">
-              <img
-                src={userimg1}
-                alt="Michael H."
-                className="w-12 lg:w-14 mr-4"
-              />
-              <div>
-                <p className="font-medium text-xl text-black">Michael H.</p>
-                <p className="font-normal text-sm text-[#808080]">
-                  Electrical Engineering
-                </p>
+        {reviews.map((review, index) => (
+          <div className="p-4" key={index}>
+            <div className="review-bg rounded-lg p-6 h-full">
+              <p className="mb-4 font-medium text-base text-[#041B29]">
+                {review.text}
+              </p>
+              <div className="flex items-center">
+                <img
+                  src={review.imgSrc}
+                  alt={review.name}
+                  className="w-12 lg:w-14 mr-4"
+                />
+                <div>
+                  <p className="font-medium text-xl text-black">
+                    {review.name}
+                  </p>
+                  <p className="font-normal text-sm text-[#808080]">
+                    {review.field}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex mt-3">
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-            </div>
-            <p className="text-base text-[#041B29]">4.9/5 Rating</p>
-          </div>
-        </div>
-        <div className="p-4 ">
-          {" "}
-          <div className="review-bg rounded-lg p-6 h-full">
-            <p className="mb-4 font-medium text-base text-[#041B29]">
-              "Having this on my computer has made me less anxious in class,
-              even if I missed something I know I can always access the
-              extension later to get explanations on things I missed"
-            </p>
-            <div className="flex items-center">
-              <img
-                src={userimg2}
-                alt="Jessica R."
-                className="w-12 lg:w-14 mr-4"
-              />
-              <div>
-                <p className="font-medium text-xl text-black">Jessica R.</p>
-                <p className="font-normal text-sm text-[#808080]">
-                  Business Administration
-                </p>
+              <div className="flex mt-3">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} className="icon golden-star" />
+                ))}
               </div>
+              <p className="text-base text-[#041B29]">
+                {review.rating}/5 Rating
+              </p>
             </div>
-            <div className="flex mt-3">
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-            </div>
-            <p className="text-base text-[#041B29]">4.9/5 Rating</p>
           </div>
-        </div>
-        <div className="p-4 ">
-          <div className="review-bg rounded-lg p-6 h-full ">
-            <p className="mb-4 font-medium text-base text-[#041B29]">
-              "Ive been using it for about two weeks now and they’ve updated it
-              almost weekly with new features. Its cool that they’re continually
-              improving it.” <br className="xl:hidden block" /> <br />
-            </p>
-            <div className="flex items-center">
-              <img
-                src={userimg3}
-                alt="Benjamin K."
-                className="w-12 lg:w-14 mr-4"
-              />
-              <div>
-                <p className="font-medium text-xl text-black">Benjamin K.</p>
-                <p className="font-normal text-sm text-[#808080]">
-                  Business Administration
-                </p>
-              </div>
-            </div>
-            <div className="flex mt-3">
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-              <FaStar className="icon golden-star" />
-            </div>
-            <p className="text-base text-[#041B29]">4.9/5 Rating</p>
-          </div>
-        </div>
+        ))}
       </Slider>
-      <div className="lg:hidden flex justify-center  items-center gap-1 my-4">
+      <div className="lg:hidden flex justify-center items-center gap-1 my-4">
         <button
-          className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-0 border-black mr-5"
+          className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
           onClick={prevSlide}
         >
           &lt;
         </button>
         <button
-          className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-0 border-black mr-5"
+          className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
           onClick={nextSlide}
         >
           &gt;
