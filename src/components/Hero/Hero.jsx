@@ -31,7 +31,7 @@ const HeroSection = () => {
               <button>
                 <a
                   href="https://www.youtube.com"
-                  target="_blank"
+                  target="_self"
                   className="lg:flex gap-2 items-center hidden"
                 >
                   <div className="buttons-gradiant w-10 h-10 rounded-full flex justify-center items-center">
