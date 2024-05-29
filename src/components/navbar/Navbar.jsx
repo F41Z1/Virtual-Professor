@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Importing icons
 import Logo from "../../assets/images/logo.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const handleLoginClick = () => {
+    const loginForm = document.getElementById("Loginpage");
+    if (loginForm) {
+      loginForm.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -30,22 +38,22 @@ const Navbar = () => {
         <div className="hidden lg:flex gap-7">
           <ul className="flex gap-7 ">
             <li className="hover:text-[#B4B4B4]">
-              <a href="#howitworks">How it Works</a>
+              <AnchorLink href="#howitworks">How it Works</AnchorLink>
             </li>
             <li className="hover:text-[#B4B4B4]">
-              <a href="#Features">Features</a>
+              <AnchorLink href="#Features">Features</AnchorLink>
             </li>
             <li className="hover:text-[#B4B4B4]">
-              <a href="#FAQs">FAQs</a>
+              <AnchorLink href="#FAQs">FAQs</AnchorLink>
             </li>
             <li className="hover:text-[#B4B4B4]">
-              <a href="#reviews">Reviews</a>
+              <AnchorLink href="#reviews">Reviews</AnchorLink>
             </li>
             <li className="hover:text-[#B4B4B4]">
-              <a href="#plancard">Pricing</a>
+              <AnchorLink href="#plancard">Pricing</AnchorLink>
             </li>
             <li className="hover:text-[#B4B4B4]">
-              <a href="#contectus">Contact Us</a>
+              <AnchorLink href="#contectus">Contact Us</AnchorLink>
             </li>
           </ul>
         </div>
@@ -59,10 +67,12 @@ const Navbar = () => {
 
         <div className="hidden lg:flex gap-7">
           <button className="hover:underline hover:underline-offset-8">
-            Login
+            <a onClick={handleLoginClick} href="#Loginpage">
+              Login
+            </a>
           </button>
           <button className="buttons-gradiant px-6 py-4 rounded-lg">
-            Sign Up
+            <a href=""> Sign Up</a>
           </button>
         </div>
       </div>
@@ -79,34 +89,34 @@ const Navbar = () => {
           </div>
           <ul className="flex flex-col gap-6 w-full">
             <li>
-              <a href="" onClick={toggleDrawer}>
+              <AnchorLink href="" onClick={toggleDrawer}>
                 How it Works
-              </a>
+              </AnchorLink>
             </li>
             <li>
-              <a href="" onClick={toggleDrawer}>
+              <AnchorLink href="" onClick={toggleDrawer}>
                 Features
-              </a>
+              </AnchorLink>
             </li>
             <li>
-              <a href="" onClick={toggleDrawer}>
+              <AnchorLink href="" onClick={toggleDrawer}>
                 FAQs
-              </a>
+              </AnchorLink>
             </li>
             <li>
-              <a href="" onClick={toggleDrawer}>
+              <AnchorLink href="" onClick={toggleDrawer}>
                 Reviews
-              </a>
+              </AnchorLink>
             </li>
             <li>
-              <a href="" onClick={toggleDrawer}>
+              <AnchorLink href="" onClick={toggleDrawer}>
                 Pricing
-              </a>
+              </AnchorLink>
             </li>
             <li>
-              <a href="" onClick={toggleDrawer}>
+              <AnchorLink href="" onClick={toggleDrawer}>
                 Contact Us
-              </a>
+              </AnchorLink>
             </li>
           </ul>
           <div className="flex flex-col gap-6 mt-6 w-full">

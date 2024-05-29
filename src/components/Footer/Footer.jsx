@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/footerlogo.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { MdOutlineEmail } from "react-icons/md";
 import Facebook from "../../assets/images/Facebook.svg";
 import Instagram from "../../assets/images/Instagram.svg";
@@ -24,40 +25,41 @@ const Footer = () => {
         <div className="flex justify-between  items-start text-white text-base leading-[25px]">
           <div>
             <ul>
-              <li>
-                <a href="#howitworks">How It Works</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="#howitworks">How it Works</AnchorLink>
               </li>
-              <li>
-                <a href="#Features">Features</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="#Features">Features</AnchorLink>
               </li>
-              <li>
-                <a href="#FAQs">FAQs</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="#FAQs">FAQs</AnchorLink>
               </li>
-              <li>
-                <a href="#reviews">Reviews</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="#reviews">Reviews</AnchorLink>
               </li>
-              <li>
-                <a href="">Contact Us</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="#contectus">Contact Us</AnchorLink>
               </li>
             </ul>
           </div>
           <div>
             <ul>
               <p>INFORMATION:</p>
-              <li>
-                <a href="">Account</a>
+
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="">Account</AnchorLink>
               </li>
-              <li>
-                <a href="#plancard">Pricing</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="#plancard">Pricing</AnchorLink>
               </li>
-              <li>
-                <a href="">Terms of Service</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="">Terms of Service</AnchorLink>
               </li>
-              <li>
-                <a href="">Privacy Policy</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="">Privacy Policy</AnchorLink>
               </li>
-              <li>
-                <a href="">Refund Policy</a>
+              <li className="hover:text-[#B4B4B4]">
+                <AnchorLink href="">Refund Policy</AnchorLink>
               </li>
             </ul>
           </div>
