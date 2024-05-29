@@ -42,7 +42,6 @@ const HeroSection = () => {
               </button>
               <button>
                 <a
-                  href=""
                   href="https://www.youtube.com"
                   target="_blank"
                   className=" lg:hidden gap-2 items-center flex "
