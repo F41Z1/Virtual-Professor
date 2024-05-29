@@ -89,32 +89,32 @@ const Navbar = () => {
           </div>
           <ul className="flex flex-col gap-6 w-full">
             <li>
-              <AnchorLink href="" onClick={toggleDrawer}>
+              <AnchorLink href="#howitworks" onClick={toggleDrawer}>
                 How it Works
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="" onClick={toggleDrawer}>
+              <AnchorLink href="#Features" onClick={toggleDrawer}>
                 Features
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="" onClick={toggleDrawer}>
+              <AnchorLink href="#FAQs" onClick={toggleDrawer}>
                 FAQs
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="" onClick={toggleDrawer}>
+              <AnchorLink href="#reviews" onClick={toggleDrawer}>
                 Reviews
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="" onClick={toggleDrawer}>
+              <AnchorLink href="#plancard" onClick={toggleDrawer}>
                 Pricing
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink href="" onClick={toggleDrawer}>
+              <AnchorLink href="#contectus" onClick={toggleDrawer}>
                 Contact Us
               </AnchorLink>
             </li>
