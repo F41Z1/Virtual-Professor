@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa6";
 import userimg1 from "../../assets/images/rev1.png";
 import userimg2 from "../../assets/images/rev2.png";
 import userimg3 from "../../assets/images/rev3.png";
-
+import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 const Reviews = () => {
   const sliderRef = useRef(null);
 
@@ -81,16 +81,16 @@ const Reviews = () => {
           </p>
           <div className="lg:flex hidden justify-end items-center gap-1 mb-4">
             <button
-              className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
+              className="hover:text-white text-[#041B29] p-3 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2  border-[#999999] hover:border-[#076dbc] mr-5"
               onClick={prevSlide}
             >
-              &lt;
+              <GrFormPrevious />
             </button>
             <button
-              className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
+              className="hover:text-white text-[#041B29] p-3 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2  border-[#999999] hover:border-[#076dbc] mr-5"
               onClick={nextSlide}
             >
-              &gt;
+              <GrFormNext />
             </button>
           </div>
         </div>
@@ -102,8 +102,8 @@ const Reviews = () => {
       >
         {reviews.map((review, index) => (
           <div className="p-4" key={index}>
-            <div className="review-bg rounded-lg p-6 h-full">
-              <p className="mb-4 font-medium text-base text-[#041B29]">
+            <div className="review-bg rounded-lg p-6 ">
+              <p className="mb-4 font-medium text-base text-[#041B29] h-[200px] sm:h-[140px] lg:h-[190px] xl:h-[140px] 2xl:h-[80px]">
                 {review.text}
               </p>
               <div className="flex items-center">
@@ -135,16 +135,17 @@ const Reviews = () => {
       </Slider>
       <div className="lg:hidden flex justify-center items-center gap-1 my-4">
         <button
-          className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
+          className="hover:text-white text-[#041B29] p-3 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2  border-[#999999] hover:border-[#076dbc] mr-5"
           onClick={prevSlide}
         >
-          &lt;
+          <GrFormPrevious />
         </button>
         <button
-          className="hover:text-white text-[#041B29] px-3 py-2 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2 hover:border-white border-black mr-5"
+          className="hover:text-white text-[#041B29] p-3 rounded-lg bg-transparent hover:bg-gradient-to-r from-[#1b4464] to-[#076dbc] border-2  border-[#999999] hover:border-[#076dbc] mr-5"
           onClick={nextSlide}
         >
-          &gt;
+          {" "}
+          <GrFormNext />
         </button>
       </div>
     </div>
