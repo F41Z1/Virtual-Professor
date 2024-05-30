@@ -76,7 +76,7 @@ const Features = () => {
             >
               <div className="flex items-start justify-center gap-4   ">
                 <img
-                  className="lg:h-8 lg:w-16 h-[25px] w-[50px] mt-1 lg:mt-0  "
+                  className="lg:h-8 lg:w-16 h-[25px] sm:h-[30px] w-[50px]  sm:w-[30px]  mt-1 lg:mt-0  "
                   src={feature.img}
                   alt=""
                 />
