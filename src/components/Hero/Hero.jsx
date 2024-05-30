@@ -24,7 +24,7 @@ const HeroSection = () => {
               learning
             </p>
 
-            <div className="lg:mt-10 mt-5 flex gap-3 sm:gap-8 items-center text-[15px] lg:text-base ">
+            <div className="lg:mt-10 mt-5 flex gap-3 sm:gap-8 lg:gap-4 xl:gap-8 items-center text-[15px] lg:text-base ">
               <button className="buttons-gradiant py-3  px-2 xl:py-4 xl:px-6 rounded-lg">
                 Download Now
               </button>
